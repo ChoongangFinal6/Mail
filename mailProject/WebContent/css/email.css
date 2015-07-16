@@ -1,0 +1,371 @@
+  #trash { float: left; width: 70px; height:40px;  hemin-height: 9em; padding: 1%; margin-right: 10px;}
+  #trash h4 { line-height: 16px; margin: 0 0 0.4em; }
+  #trash h4 .ui-icon { float: left; }  
+  
+  .mailList {
+	  margin:2px 4px 2px 0px; 
+	  float: left;
+	  padding: 1px 3px 1px 3px;
+  	  background-color: #333;
+  	  color:white; 
+	  border-radius: 4px;
+	  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  }
+  
+  div #toAddress, #title {
+	  width: 800px; 
+	  border:1px solid black; 
+	  padding: 5px; 
+	  overflow-x: auto; 
+	  margin: 0px 15px 0px 15px;
+	  
+	  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
+	  background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
+	  background-image: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+	  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+	  background-repeat: repeat-x;
+	  border-radius: 4px;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+	  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+	  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+
+  }
+  
+  #toAddrleft, #titleleft {width: 80px;}  
+  th {height: 30px;}
+  #saveaddr {padding: 8px;}
+  
+  .button-style {
+  cursor:pointer;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
+  background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  padding: 5px 5px 5px 5px;
+}
+
+  .input-style {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
+  background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  padding: 5px 5px 5px 5px;
+}
+
+.maillist {
+	width: 980px; 
+	background-color: #333; 
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	margin-bottom: 3px;
+	color: white;
+}
+	
+.color {
+	background-color: #333; 
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.mainTop {
+	height: 25px;
+	padding: 20px;
+	margin: 20px 6px 0px 7px;	
+}
+  
+.logout {
+	float: right; 
+	margin: -35px 0px 0px 0px;	
+} 
+
+.mailham {
+	cursor: pointer;
+	margin: -10px 0px 0px 0px;
+	width: 100px;
+	color: white;
+}
+
+.mailSide {
+	width: 200px; 	
+	position: absolute; 
+	top: 100px; 
+	bottom: 0; 
+	left: 15px; 
+	height: 750px;
+	padding-top: 10px;
+}
+
+.mailView {
+	width: 79%; 	
+	position: absolute; 
+	top: 100px; 
+	bottom: 0; 
+	left: 225px; 
+	padding: 15px; 
+	height: 720px;
+}
+
+.mailDel {
+	margin-left: 15px;
+}
+
+.sideHeight {
+	height: 30px;
+	padding-top: 5px;
+}
+
+.sideBtn {
+	cursor:pointer;
+	background-color: white;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 0px solid #000000;		
+}
+
+.writeBtn {
+	margin-top: 10px;
+}
+
+.mailContTop {
+	padding: 10px;
+}
+
+.mailCont {
+	padding: -20px 15px 15px 15px; 
+	height: 500px; 
+	margin-left: 10px;
+}
+
+#container {
+	width: 980px; 
+	height: 518px; 
+	border: 1px solid black; 
+	padding: 10px; 
+	overflow: auto;	
+	
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
+	background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
+	background-image: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+	background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+	background-repeat: repeat-x;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+}
+
+#id, #password, #passChk, #name, #birthdate {
+	width: 200px; 
+	height: 30px; 
+	margin-bottom: 10px; 
+	margin-right: 10px; 
+	padding-left: 10px;
+	
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
+	background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
+	background-image: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+	background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+	background-repeat: repeat-x;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+}
+
+.joinTop {
+	height: 60px; 
+	width: 650px;
+	
+	position: absolute;
+	top: 50px;
+	left: 300px;
+}
+
+.join1 {
+	width: 625px;
+	height: 220px; 
+	position: absolute; 
+	top: 100px;
+	left: 43px;
+	border: none;	
+}
+
+.idLeft {
+	position: absolute;
+	top: 25px;
+	left: 85px;
+	color:white;
+}
+
+.idRight {
+	position: absolute;
+	top: 20px;
+	left: 150px;
+}
+
+.domain {
+	position: absolute;
+	top: 25px;
+	left: 370px;
+	color:white;
+}
+
+.idChkMsg {
+	position: absolute;
+	top: 65px;
+	left: 153px;
+}
+
+.passLeft {
+	position: absolute;
+	top: 107px;
+	left: 70px;
+	color:white;
+}
+
+.passRight {
+	position: absolute;
+	top: 100px;
+	left: 150px;
+}
+
+.passLeft2 {
+	position: absolute;
+	top: 150px;
+	left: 33px;
+	color:white;
+}
+
+.passRight2 {
+	position: absolute;
+	top: 145px;
+	left: 150px;
+}
+
+#passChkMsg {
+	position: absolute;
+	top: 190px;
+	left: 153px;
+}
+
+.join2 {
+	width: 625px; 
+	height: 140px;
+	position: absolute; 
+	top: 350px;
+	left: 43px;
+	border: none;	
+}
+
+.nameLeft {
+	position: absolute;
+	top: 25px;
+	left: 85px;
+	font-weight: bold;
+	color:white;
+}
+
+.nameRight {
+	position: absolute;
+	top: 20px;
+	left: 150px;
+}
+
+.birthLeft {
+	position: absolute;
+	top: 70px;
+	left: 85px;
+	font-weight: bold;
+	color:white;
+}
+
+.birthRight {
+	position: absolute;
+	top: 65px;
+	left: 150px;
+}
+
+.genderLeft {
+	position: absolute;
+	top: 115px;
+	left: 85px;
+	font-weight: bold;
+	color:white;
+}
+
+.genderRight {
+	position: absolute;
+	top: 117px;
+	left: 150px;
+	color:white;
+}
+
+.join3 {
+	width: 625px; 
+	height: 130px;
+	position: absolute; 
+	top: 520px;
+	left: 43px;
+	border: none;	
+}
+
+.phone1 {
+	position: absolute;
+	top: 20px;
+	left: 165px;
+	font-weight: bold;
+}
+
+.phone2 {
+	position: absolute;
+	top: 60px;
+	left: 165px;
+	font-weight: bold;
+}
+
+.joinSend {
+	position: absolute;
+	top: 690px;
+	left: 320px;
+}
+
+.joinCancel {
+	position: absolute;
+	top: 690px;
+	left: 370px;
+}
+
+.hover:HOVER {
+	background-color: #c0c0c0;
+}
+
+.aClass {
+	text-decoration:none;
+	color: white;
+}
+
+form.join {
+	position: absolute; 
+	left: 20%; 
+	top: 30px;
+}

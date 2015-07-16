@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+
+.addrBookList1 {
+	position: absolute;
+	top: 110px; 
+		
+	width: 200px; 	 
+	height: 200px; 
+	overflow: auto;	
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
+    background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
+    background-image: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75); 
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75); 
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75); 
+    padding: 5px 5px 5px 5px;
+}
+
+.addrBookList2 {
+	position: absolute;
+	top: 110px; 
+	left: 265px;
+		
+	width: 200px; 	
+	height: 200px; 
+	overflow: auto;
+		
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
+    background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
+    background-image: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75); 
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75); 
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75); 
+    padding: 5px 5px 5px 5px;
+}
+
+.btnDiv {
+	width: 10px; 
+	
+	position: absolute;
+	top: 120px;
+	left: 232px;
+
+}
+
+.checkbox {
+	display: none;
+}
+
+.checkbox2 {
+	background-color: #333; 
+	color:white;
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);	
+}
+
+
+.addrList {margin: 5px;}
+span:HOVER {cursor: pointer;}
+
+.color {
+	background-color: #333; 
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.addrTitle {
+	height: 30px;	
+	padding: 10px;
+	width: 450px;
+	position: absolute;
+}
+
+.addrInput {
+	position: absolute;
+	top: 70px;
+	left: 10px;
+}
+
+  .button-style {
+  cursor:pointer;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
+  background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  padding: 5px 5px 5px 5px;
+}
+
+  .background {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#f8f8f8));
+  background-image: -webkit-linear-gradient(top, #ffffff, 0%, #f8f8f8, 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  padding: 5px 5px 5px 5px;
+}
+
+#mailAddr {
+	width: 360px;
+}
+
+#moveRight {
+	margin: 65px 0px 10px 0px;
+}
+
+.sendBtn {
+	position: absolute;
+	top: 330px;
+	left: 195px;
+}
+
+.cancelBtn {
+	position: absolute;
+	top: 330px;
+	left: 245px;
+}

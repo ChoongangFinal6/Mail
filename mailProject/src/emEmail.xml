@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="emEmail">
+	<resultMap type="emEmail" id="emEmailResult">
+		<result property="emNo" column="emNo" />
+		<result property="emSendAddr" column="emSendAddr" />
+		<result property="emGetAddr" column="emGetAddr" />
+		<result property="emSendDate" column="emSendDate" />
+		<result property="emTitle" column="emTitle" />
+		<result property="emContent" column="emContent" />
+		<result property="emReadChk" column="emReadChk" />
+		<result property="emSendDelChk" column="emSendDelChk" />
+		<result property="emGetDelChk" column="emGetDelChk" />
+	</resultMap>
+	
+	
+	
+	<select id="getEmailDetail" parameterType="int" resultMap="emEmailResult">
+   		select * from EmEmail where emNo = #{emNo}
+  	</select>
+  	<update id="readUpdate" parameterType="int">
+  		update EmEmail set emReadChk = 1 where emNo = #{emNo}
+  	</update>
+  	
+  	
+	<select id="getEmailList" parameterType="emEmail" resultMap="emEmailResult">
+		<!-- select * from EmEmail where emGetAddr=#{id} -->
+		select * from (select rownum rn, a.* from (select * from EmEmail where emGetAddr=#{emGetAddr} and emGetDelChk=0 order by emNo desc) a) where rn between #{start} and #{end}
+	</select>
+	
+	<select id="getTotalCnt" parameterType="String" resultType="int">
+   		select count(*) from EmEmail where emGetAddr=#{id} and emGetDelChk=0
+  	</select>
+  	
+	<select id="getMySendlList" parameterType="emEmail" resultMap="emEmailResult">
+		<!-- select * from EmEmail where emGetAddr=#{id} -->
+		select * from (select rownum rn, a.* from (select * from EmEmail where emSendAddr=#{emSendAddr} and emSendDelChk=0 order by emNo desc) a) where rn between #{start} and #{end}
+	</select>  
+	
+	<select id="sendTotalCnt" parameterType="String" resultType="int">
+   		select count(*) from EmEmail where emSendAddr=#{id} and emSendDelChk=0
+  	</select>
+  	
+	<select id="getNotReadlList" parameterType="emEmail" resultMap="emEmailResult">
+		<!-- select * from EmEmail where emGetAddr=#{id} -->
+		select * from (select rownum rn, a.* from (select * from EmEmail where emGetAddr=#{emGetAddr} and emReadChk=0 and emGetDelChk=0 order by emNo desc) a) where rn between #{start} and #{end}
+	</select>  
+	
+	<select id="notReadTotalCnt" parameterType="String" resultType="int">
+   		select count(*) from EmEmail where emGetAddr=#{id} and emReadChk=0 and emGetDelChk=0
+  	</select>
+  	
+  	<update id="getMailDel" parameterType="emEmail">
+  		update EmEmail set emGetDelChk = 1 where emNo = #{emNo} and emGetAddr = #{emGetAddr}
+  	</update>
+  	
+  	<update id="sendMailDel" parameterType="emEmail">
+  		update EmEmail set emSendDelChk = 1 where emNo = #{emNo} and emSendAddr = #{emSendAddr}
+  	</update>
+  	  	
+  	<select id="EmailNo" resultType="int">
+   		select max(nvl(emNo, 0)) from EmEmail 
+  	</select>
+  	
+  	<insert id="EmEmail" parameterType="EmEmail">
+  		insert into EmEmail values(#{emNo}, #{emSendAddr}, #{emGetAddr}, sysdate, #{emTitle}, #{emContent}, #{emReadChk}, 0, 0)
+  	</insert>
+  	
+</mapper>

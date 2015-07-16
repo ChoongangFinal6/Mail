@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="emAddrBook">
+	<resultMap type="emAddrBook" id="emAddrBookResult">
+		<result property="emId" column="emId"/>
+		<result property="emAddrBook" column="emAddrBook"/>
+		<result property="emAddrName" column="emAddrName"/>
+		<result property="emBolckChk" column="emBolckChk"/>
+	</resultMap>
+	<select id="addrBookList" parameterType="String" resultMap="emAddrBookResult">
+		select * from EmAddrBook where emId=#{emId} and emBolckChk=0
+	</select>
+	<insert id="addAddrBook" parameterType="emAddrBook">
+		insert into EmAddrBook values(#{emId}, #{emAddrBook}, #{emAddrName}, 0)
+	</insert>
+	<delete id="addDelBook" parameterType="emAddrBook">
+		delete EmAddrBook where emId=#{emId} and emAddrBook=#{emAddrBook}
+	</delete>
+</mapper>

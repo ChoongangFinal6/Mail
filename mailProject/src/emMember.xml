@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="emMember">
+	<resultMap type="emMember" id="emMemberResult">
+		<result property="emId" column="emId"/>
+		<result property="emPassword" column="emPassword"/>
+		<result property="emPhone" column="emPhone"/>
+		<result property="emName" column="emName"/>
+		<result property="emBirthdate" column="emBirthdate"/>
+		<result property="emGender" column="emGender"/>
+	</resultMap>
+	<select id="emAll"  resultMap="emMemberResult">
+		select * from EmMember
+	</select>
+	<select id="emAllSarch" parameterType="String"  resultMap="emMemberResult">
+		select * from EmMember where emId=#{emId}
+	</select>
+	<insert id="addEmMem" parameterType="emMember">
+		insert into EmMember values(#{emId}, #{emPassword}, #{emPhone}, #{emName}, #{emBirthdate}, #{emGender})
+	</insert>
+	<select id="joinChk" parameterType="emMember" resultMap="emMemberResult">
+		select * from emMember where emName=#{emName} and emBirthdate=#{emBirthdate} and emGender=#{emGender} and emPhone=#{emPhone}
+	</select>
+	<select id="emMemChk" parameterType="String" resultMap="emMemberResult">
+		select * from emMember where emId=#{emId}
+	</select>
+</mapper>

@@ -1,0 +1,39 @@
+<!-- bold 부분, 되돌리기가 미완성 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* span {
+	font-weight: bold;
+} */
+</style>
+<script type="text/javascript">
+	window.highlight = function() {
+		var selection = window.getSelection().getRangeAt(0);
+		var selectedText = selection.extractContents();
+		var span = document.createElement("span");
+		span.style.fontWeight = "bold";
+		span.appendChild(selectedText);
+		if(selectedText != null && selectedText != ""){
+			selection.insertNode(span);
+		}
+	}
+	
+	window.bclear = function() {
+		var selection = window.getSelection().getRangeAt(0);
+		var selectedText = selection.extractContents();
+		var span = document.createElement("span");
+		span.style.fontWeight = "normal";
+		span.appendChild(selectedText);
+		selection.insertNode(span);
+	 }
+</script>
+</head>
+<body>
+	<div contenteditable="true">Lorem ipsum dolor sit</div>
+	<input type="button" onclick="bclear()" value="clear">
+	<button onclick="highlight()">Highlight</button>
+</body>
+</html>
