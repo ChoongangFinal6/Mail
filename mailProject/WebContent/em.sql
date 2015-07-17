@@ -62,7 +62,9 @@ create table EmEmail(
 	emSendDate date,
 	emTitle varchar2(60) not null,
 	emContent varchar2(2000),
-	emReadChk number
+	emReadChk number,
+	emsendDelChk number,
+	emgetDelChk number
 )
 
 insert into EmEmail values(1, 'ccc@choongang.com', 'ttt@choongang.com', sysdate, '테스트입니다', '테스트 내용이라고 아놔', 0);
