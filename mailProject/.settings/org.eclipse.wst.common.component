@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="aaaaa">
+    <wb-module deploy-name="mailProject">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="java-output-path" value="/aaaaa/build/classes"/>
-        <property name="context-root" value="aaaaa"/>
+        <property name="java-output-path" value="/mailProject/build/classes"/>
+        <property name="context-root" value="mailProject"/>
     </wb-module>
 </project-modules>
