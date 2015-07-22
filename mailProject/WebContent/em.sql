@@ -1,3 +1,5 @@
+drop table PhoneInfo;
+
 create table PhoneInfo(
 	name varchar2(20) not null,
 	birthdate date not null,
@@ -17,6 +19,8 @@ insert into PhoneInfo values('나영', '1988-02-17', 2, '010-9353-4582');
 insert into PhoneInfo values('수지', '2000-11-28', 2, '010-4833-7422');
 
 select * from PHONEINFO;
+
+drop table EmMember;
 
 create table EmMember(
 	emId varchar2(40) primary key,
@@ -67,9 +71,9 @@ create table EmEmail(
 	emgetDelChk number
 )
 
-insert into EmEmail values(1, 'ccc@choongang.com', 'ttt@choongang.com', sysdate, '테스트입니다', '테스트 내용이라고 아놔', 0);
-insert into EmEmail values(2, 'aaa@choongang.com', 'ttt@choongang.com', sysdate, '내용 잘 보이는가', '테스트입니다', 0);
-insert into EmEmail values(3, '123@choongang.com', 'ttt@choongang.com', sysdate, '테스트2', '테스트 내용', 0);
+insert into EmEmail values(1, 'ccc@choongang.com', 'ttt@choongang.com', sysdate, '테스트입니다', '테스트 내용이라고 아놔', 0, 0, 0);
+insert into EmEmail values(2, 'aaa@choongang.com', 'ttt@choongang.com', sysdate, '내용 잘 보이는가', '테스트입니다', 0, 0, 0);
+insert into EmEmail values(3, '123@choongang.com', 'ttt@choongang.com', sysdate, '테스트2', '테스트 내용', 0, 0, 0);
 
 select * from EmEmail;
 drop table EmEmail;
